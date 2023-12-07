@@ -1,6 +1,9 @@
 # CV Super Resolution Python Project
 
 ## 1. Models
+### flow chart
+![flow_chart](./result/images/flow_chart.png)
+
 ### SRCNN
 ![SRCNN](./result/images/SRCNN.png)
 
@@ -34,9 +37,11 @@ The project constains 5 folders.
 - result: training peremeters tables, training results plots and related images
 
 ### data
-data folder is the transformation of dataset DIV2K. It contains three subfolders named train, val, and test to store corresponding datasets.  
-Original images are in HR and LR folders. Model outputs are in SRCNN folder.  
-dataPrepare.ipynb: Split the original train dataset into new train dataset with 550 images and val dataset with 250 images. Rename the original valid dataset as new test dataset.
+- data folder is the transformation of dataset DIV2K. It contains three subfolders named train, val, and test to store corresponding datasets.  
+![data_folder1](./result/images/data_folder1.png)
+- Original images are in HR and LR folders. Model outputs are in SRCNN folder.  
+![data_folder2](./result/images/data_folder2.png)
+- dataPrepare.ipynb: Split the original train dataset into new train dataset with 550 images and val dataset with 250 images. Rename the original valid dataset as new test dataset.
 
 ### SRCNN
 - SRCNN_training_2.0.ipynb: the main code to train and evaluate the SRCNN
