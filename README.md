@@ -2,22 +2,30 @@
 
 ## 1. Models
 ### SRCNN
-![SRCNN](https://github.com/YuanrunXu/USC-EE541-Final-Project-Super-Resolution/assets/43257371/f506a4a8-80fb-47e6-8c55-739181e1a53f)
+![SRCNN](./result/images/SRCNN.png)
 
 ### SRGAN
-![SRGAN](https://github.com/YuanrunXu/USC-EE541-Final-Project-Super-Resolution/assets/43257371/1796abc7-d63a-4d80-ab4e-307d54404e05)
+![SRGAN](./result/images/SRGAN.png)
 
 
 ## 2. Training curves
 ### SRCNN(9-1-5)
-![SRCNN_results](https://github.com/YuanrunXu/USC-EE541-Final-Project-Super-Resolution/assets/43257371/c808212e-183e-4b03-9c86-a9fb2f5902ac)
+![SRCNN(9-1-5)_plot](./result/result_plot_915.png)
 ### SRCNN(5-3-5)
-
+![SRCNN(5-3-5)_plot](./result/result_plot_535.png)
 ### SRGAN Curves
-![SRGAN_results](https://github.com/YuanrunXu/USC-EE541-Final-Project-Super-Resolution/assets/43257371/f1b028ff-62f4-4f1a-8903-30c1bdffc358)
+![SRGAN_plot](./result/result_plot_SRGAN.png)
 
 
-## 3. Folders
+## 3. Example images
+![example1](./result/images/example1.png)
+![example2](./result/images/example2.png)
+![example3](./result/images/example3.png)
+![example4](./result/images/example4.png)
+![example5](./result/images/example5.png)
+
+
+## 4. Folders
 The project constains 5 folders.
 - data: DIV2K dataset and code of splitting the train dataset into train and validation
 - SRCNN: code and model of SRCNN
@@ -51,7 +59,7 @@ dataPrepare.ipynb: Split the original train dataset into new train dataset with 
 - best_SRGAN_generator: SRCNN(9-1-5)
 
 
-## 4. Deployment
+## 5. Deployment
 * Put the DIV2K dataset into the Data folder, then run dataPrepare.ipynb  
 * SRCNN & SRGAN Training: run the corresponding code of .ipynb. The model peremeters will be automatically saved in saved_model folder for test evaluation in the code. If the folder does not exist, the code will create first.  
 * The code could use .csv files to plot the model performance and save it as .png files.
